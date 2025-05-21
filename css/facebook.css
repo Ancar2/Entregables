@@ -26,8 +26,8 @@ body{
     justify-content: start;
     align-items: start;
     width: 560px; 
-    flex-wrap: wrap;
-    height: 350px;
+    flex-wrap: nowrap;
+    height: 200px;
    
    
       
@@ -46,7 +46,6 @@ img{
 .descripcion {
     
     padding: 0;
-   
     margin: 0px 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
@@ -186,10 +185,15 @@ input::placeholder{
 
 .button-m{
     display: flex;
-    background-color: rgba(203, 203, 203, 0.416);
+    background-color: rgba(203, 203, 203, 0.224);
     border: 1px solid rgba(128, 128, 128, 0.29);
     height: 20px;
     align-items: center;
+}
+
+.button-m:hover{
+    background-color: rgba(160, 155, 155, 0.545);
+   
 }
 
 .mas{
@@ -198,6 +202,7 @@ input::placeholder{
     overflow: hidden;
     margin-bottom: 2px;
     font-weight: 200px;
+    color: inherit;
     
 }
 
