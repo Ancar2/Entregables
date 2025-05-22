@@ -1,11 +1,12 @@
 body{
     display: flex;
-    height: 90dvh;
+    height: 99dvh;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     background-image: url('/outlook/imagenes/Captura\ de\ pantalla\ 2025-05-22\ a\ la\(s\)\ 1.43.26\ a.m..png');
     background-size: cover;
+    
 }
 
 .cards{
