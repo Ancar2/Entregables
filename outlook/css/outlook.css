@@ -1,9 +1,11 @@
 body{
     display: flex;
-    height: 100dvh;
+    height: 90dvh;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg,rgba(227, 11, 11, 0.11) 29%, rgba(87, 199, 133, 0.07) 50%, rgba(237, 221, 83, 0.08) 100%);
+    align-items: center; 
+    background-image: url('/outlook/imagenes/Captura\ de\ pantalla\ 2025-05-22\ a\ la\(s\)\ 1.43.26\ a.m..png');
+    background-size: cover;
 }
 
 .cards{
@@ -20,7 +22,7 @@ body{
 }
 
 .logo{
-    width: 100px;;
+    width: 100px;
 }
 
 
@@ -121,3 +123,44 @@ input::placeholder{
     margin-left: 10px;
     font-size: 13px;
 }
+
+.pie{
+    
+    display: flex;
+    position: fixed;
+    gap: 10px;
+    font-size: 10px;
+    bottom: 1px;
+    right: 1px;
+    margin-right: 10px;
+    margin-bottom:3px;
+    height: 20px;
+    align-items: center;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.letra-pie{
+    text-decoration: none;
+    color: inherit;
+}
+
+.letra-pie:hover{
+    text-decoration: underline;
+}
+
+.enlace-puntos{
+    text-decoration:none;
+    color: inherit;
+}
+
+.puntos{
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.puntos:hover{
+    text-decoration: none;
+}
+
+
