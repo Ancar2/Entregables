@@ -1,0 +1,123 @@
+body{
+    display: flex;
+    height: 100dvh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,rgba(227, 11, 11, 0.11) 29%, rgba(87, 199, 133, 0.07) 50%, rgba(237, 221, 83, 0.08) 100%);
+}
+
+.cards{
+    width: 380px;
+    height: 338px;
+}
+
+.card-superior{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo{
+    width: 100px;;
+}
+
+
+.letra{
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+input{
+    width:100%;
+    font-size: 13px;
+    height: 25px;
+    padding-left: 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-top: 15px;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    color: rgba(37, 38, 39, 0.663);
+}
+
+.pregunta-one{
+    font-size: 11.5px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    
+}
+
+.cree{
+    text-decoration: none;
+    color: #1A6FBB;
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.cree:hover{
+    text-decoration: underline;
+    color: #666666;
+}
+
+.pregunta-two{
+    font-size: 11.5px;
+    margin-top: 0px;
+    text-decoration: none;
+    color: #1A6FBB;
+    font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+}
+
+.pregunta-two:hover{
+    text-decoration: underline;
+    color: #666666;
+}
+
+.space-button{
+    display: flex;
+    justify-content: end;
+}
+
+
+.button{
+    color: white;
+    background-color:#005DA6;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    font-size: 13px;
+    border: 1px solid #005DA6;
+}
+
+.button:hover{
+    background-color: #01508c;
+}
+
+.card-inferior{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.llave{
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 28px;
+}
+
+.letra-opciones{
+    margin-left: 10px;
+    font-size: 13px;
+}
