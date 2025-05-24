@@ -67,14 +67,15 @@ body{
     font-family: 'poppins',helvetica, sans-serif;
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    -webkit-text-stroke-width: 0.8px;
     font-size: 16px;
 }
 
 .fa-bars{
     padding: 7px;
     font-size: 18px;
-    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-width: 0.2px;
+    
 }
 
 .menu:hover .fa-bars{
@@ -150,7 +151,7 @@ input::placeholder{
     line-height: 1.5px;
     font-family: 'poppins',helvetica, sans-serif;
     font-size: 14px;
-    font-weight: bold;
+    -webkit-text-stroke-width: 0.8px;
 }
 
 
@@ -246,27 +247,48 @@ input::placeholder{
 
 .nav-two{
     display: flex;
-    justify-content: end;
-    gap: 30px;
+    justify-content: center;
+    gap: 1rem;
     width: 100%;
     height: 45px;
-    align-items: center;
     font-family: 'poppins',helvetica, sans-serif;
     color: black;
-    font-size: 13.5px;
+    font-size: 0.85rem;
     -webkit-text-stroke-width: 0.3px;
+    flex: wrap;
+    box-sizing: border-box;
 }
 
 .nav-gray{
     display: flex;
-    justify-content: space-around;
-    width:79%;
-    height: 100%;
+    justify-content: start;
+    align-items: center;
+    padding: 0 22rem 0 1rem;
+    box-sizing: border-box;
+    gap: 32rem;
     background-color: #CCCCCC;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    gap: 430px;
-    align-items: center;
+    letter-spacing: 0.5px;
+    
+}
+
+@media (max-width: 1680px) {
+  .nav-gray {
+    gap: 5rem;
+  }
+}
+
+.palabras-left{
+    text-decoration: none;
+    color: inherit;
+    margin-right: 25px;
+    margin-left: 22.5rem;
+} 
+
+
+.palabras-left:hover{
+    color: #999999;
 }
 
 .palabras-left-gray{
@@ -279,9 +301,11 @@ input::placeholder{
     color: #999999;
 }
 
+
+
 .palabra-inicio{
-    font-size: 15.5px;
-    -webkit-text-stroke-width: 0.8px;
+    font-size: 15px;
+    -webkit-text-stroke-width: 0.9px;
     letter-spacing: 1px;
     text-decoration: none;
     color: inherit;
@@ -289,9 +313,15 @@ input::placeholder{
 
 .lista-inicio{
     display: flex;
-    margin-right: 165px;
     list-style: none;
-    gap: 38px;
+    gap: 2rem;
+    
+}
+
+@media (max-width: 530px) {
+  .lista-inicio {
+    display: none;
+  }
 }
 
 .palabra-lista-gray{
@@ -304,4 +334,143 @@ input::placeholder{
     
 }
 
-/* -------Main --------------------------*/
+/* -------Main- primera fila de imagenes --------------------------*/
+
+.imagen-one{
+    display: flex;
+    justify-content: center;
+}
+.patineta{ 
+    width: 94%;
+}
+
+.arrow-left{
+    font-size: 4rem;
+    color: rgba(153, 10, 10, 0);
+    position: absolute;
+    top: 1rem;
+    margin-top: 17rem;
+    margin-left: 4.5rem;
+    background-color: #053fbb00; 
+    height: 7rem;
+    align-content: center;
+}
+
+.img-one:hover .arrow-left{
+    color: rgb(239, 236, 236);
+    background-color: #211f1f5d; 
+
+}
+
+.arrow-right{
+    font-size: 4rem;
+    color: rgba(153, 10, 10, 0);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    margin-top: 17rem;
+    margin-right: 4.5rem;
+    background-color: #053fbb00; 
+    height: 7rem;
+    align-content: center;
+}
+
+.img-one:hover .arrow-right{
+    color: rgb(239, 236, 236);
+    background-color: #211f1f5d; 
+
+}
+
+.anuncio{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 2px;
+    
+}
+
+.enlace-anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    margin: 0px;
+    height: 30px;
+    width: 68%;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.87) 0%, rgba(2, 4, 5, 1) 13%, rgba(0, 0, 0, 1) 83%, rgba(255, 255, 255, 0.9) 100%);  
+}
+
+.button-compra{
+    background-color: #FFE801;
+    height: 20px;
+    width: 7rem;
+    font-size: 13px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* -------segunda fila de imagenes --------------------------*/
+
+.imagenes-two {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;  
+    gap: 1.5rem; 
+}
+
+.img-two{
+    width: 27.5rem;
+    height: 11rem;
+}
+
+/* -------tercera fila de imagenes --------------------------*/
+
+.imagenes-three{
+    display: flex;
+    justify-content: center;
+}
+
+.img-three{
+    width: 85rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* -------Cuarta fila de imagenes --------------------------*/
+
+.imagenes-four{ 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.img-four{
+   width: 85.5rem;
+   object-fit: cover;
+}
+
+.img-four-2{
+    position: absolute;
+    left: 1px;
+    margin-left: 21rem;
+    width: 85rem;
+    opacity: 0;
+}
+
+.imagenes-four:hover .img-four-2{
+   opacity: 1;
+}
+
+/* -------blackdays --------------------------*/
+
+.blackdays{
+    font-family: 'poppins',helvetica, sans-serif; 
+    font-size: 1.25rem;
+    -webkit-text-stroke-width: 1px;
+    margin-left: 22rem;
+    margin-top: 0px;
+    border: 1px solid red; 
+}
