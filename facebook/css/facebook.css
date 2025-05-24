@@ -27,10 +27,7 @@ body{
     align-items: start;
     width: 560px; 
     flex-wrap: nowrap;
-    height: 200px;
-   
-   
-      
+    height: 200px;      
 }
 
 
@@ -202,8 +199,7 @@ input::placeholder{
     overflow: hidden;
     margin-bottom: 2px;
     font-weight: 200px;
-    color: inherit;
-    
+    color: inherit;    
 }
 
 
@@ -220,9 +216,7 @@ input::placeholder{
     color: gray;
     padding: 0px;
     flex-wrap: wrap;
-    
-    
-   
+  
 }
 
 .tema{
@@ -230,8 +224,7 @@ input::placeholder{
     margin: 0px 22px 0px 0px;
     text-decoration: none;
     color: inherit;
-   
-   
+
 }
 
 .tema:hover{
