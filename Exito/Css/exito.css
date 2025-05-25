@@ -336,71 +336,120 @@ input::placeholder{
 
 /* -------Main- primera fila de imagenes --------------------------*/
 
-.imagen-one{
+.banner{
     display: flex;
     justify-content: center;
 }
-.patineta{ 
-    width: 94%;
+
+.imgagenes-banner{
+    display: flex;
+    justify-content: center;
+    width: 93%;
+    overflow: hidden;
+}
+
+.carrusel{
+    display: flex;
+    justify-content: start;
+    animation: mover1 40s infinite;
+    
+}
+
+.imagen-car{ 
+    width: 100%;
 }
 
 .arrow-left{
+    position: absolute;
+    left: 1rem;
+    margin-top: 9rem;
+    margin-left: 4rem;
     font-size: 4rem;
     color: rgba(153, 10, 10, 0);
-    position: absolute;
-    top: 1rem;
-    margin-top: 17rem;
-    margin-left: 4.5rem;
-    background-color: #053fbb00; 
-    height: 7rem;
-    align-content: center;
+    background-color: #053fbb00;    
 }
 
-.img-one:hover .arrow-left{
+.imgagenes-banner:hover .arrow-left{
     color: rgb(239, 236, 236);
     background-color: #211f1f5d; 
 
 }
 
 .arrow-right{
+    position: absolute;
+    right: 1rem;
+    margin-top: 9rem;
+    margin-right: 4rem;
     font-size: 4rem;
     color: rgba(153, 10, 10, 0);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    margin-top: 17rem;
-    margin-right: 4.5rem;
     background-color: #053fbb00; 
-    height: 7rem;
-    align-content: center;
 }
 
-.img-one:hover .arrow-right{
+.imgagenes-banner:hover .arrow-right{
     color: rgb(239, 236, 236);
     background-color: #211f1f5d; 
 
 }
 
-.anuncio{
+@keyframes mover1 {
+  9%   { transform: translateX(0%); }
+  10%   { transform: translateX(-100%); }
+  19%   { transform: translateX(-100%); }
+  20%   { transform: translateX(-200%); }
+  29%   { transform: translateX(-200%); }
+  30%   { transform: translateX(-300%); }
+  39%   { transform: translateX(-300%); }
+  40%   { transform: translateX(-400%); }
+  49%   { transform: translateX(-400%); }
+  50%   { transform: translateX(-500%); }
+  59%   { transform: translateX(-500%); }
+  60%   { transform: translateX(-600%); }
+  69%   { transform: translateX(-600%); }
+  70%   { transform: translateX(-700%); }
+  79%   { transform: translateX(-700%); }
+  80%   { transform: translateX(-800%); }
+  89%   { transform: translateX(-800%); }
+  90%   { transform: translateX(-900%); }
+  99%   { transform: translateX(-900%); }
+  100%   { transform: translateX(-1000%); }
+}
+
+
+/* -------segunda fila de imagenes --------------------------*/
+
+.contenedor-promo{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 2px;
+}
+
+.promociones{
+    display: flex;
+    justify-content: start;
+    width: 68%;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0.87) 0%, rgba(2, 4, 5, 1) 13%, rgba(0, 0, 0, 1) 83%, rgba(255, 255, 255, 0.9) 100%);
+    overflow: hidden;
+}
+
+.carrusel-promo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins',helvetica, sans-serif;
+    gap: 1rem;
+    animation: mover2 100s infinite;
     
 }
 
-.enlace-anuncio{
+.promo{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    font-family: 'poppins',helvetica, sans-serif;
-    margin: 0px;
-    height: 30px;
-    width: 68%;
+    width: 80rem;
     gap: 1rem;
-    color: white;
-    text-decoration: none;
-    background: linear-gradient(90deg,rgba(255, 255, 255, 0.87) 0%, rgba(2, 4, 5, 1) 13%, rgba(0, 0, 0, 1) 83%, rgba(255, 255, 255, 0.9) 100%);  
+   
 }
 
 .button-compra{
@@ -410,6 +459,15 @@ input::placeholder{
     font-size: 13px;
     border: none;
     border-radius: 20px;
+}
+
+@keyframes mover2 {
+    0%   { transform: translateX(15.3%); }
+    100%   { transform: translateX(-98%); }
+}
+
+.carrusel-promo:hover {
+    animation-play-state: paused;
 }
 
 /* -------segunda fila de imagenes --------------------------*/
@@ -439,38 +497,124 @@ input::placeholder{
     margin-bottom: 2rem;
 }
 
+.imagenes-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+}
+
 /* -------Cuarta fila de imagenes --------------------------*/
 
-.imagenes-four{ 
+.imagenes-cambia{ 
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 32px;
 }
 
-.img-four{
+.img-cambia{
    width: 85.5rem;
-   object-fit: cover;
 }
 
-.img-four-2{
+.img-cambia-two{
     position: absolute;
     left: 1px;
     margin-left: 21rem;
-    width: 85rem;
+    width: 85.5rem;
     opacity: 0;
 }
 
-.imagenes-four:hover .img-four-2{
+.imagenes-cambia:hover .img-cambia-two{
    opacity: 1;
 }
 
 /* -------blackdays --------------------------*/
 
+.black{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 .blackdays{
     font-family: 'poppins',helvetica, sans-serif; 
     font-size: 1.25rem;
     -webkit-text-stroke-width: 1px;
-    margin-left: 22rem;
     margin-top: 0px;
+    width: 66.3%;
+    letter-spacing: 1px;
     border: 1px solid red; 
+}
+
+/* -------iquinta fila de imagenes--------------------------*/
+
+.imagenes-left{
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 34px;
+}
+
+.img-left-one{
+    width: 42rem;
+    border-radius: 15px;
+}
+
+.img-left{
+    width: 20rem;
+    border-radius: 15px;
+}
+
+/* -------sexta fila de imagenes--------------------------*/
+
+.imagenes-right{
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 33.5px;
+}
+
+.img-right{
+    width: 20rem;
+    border-radius: 15px;
+}
+
+.img-right-three{
+    width: 42rem;
+    border-radius: 15px;
+}
+
+
+/* -------octava fila de imagenes--------------------------*/
+
+.img-center{
+    width: 85rem;
+    border-radius: 15px;
+}
+
+/* -------novena fila de imagenes--------------------------*/
+
+.contenedor-imagenes-nine{
+    display: flex;
+    justify-content: center;
+    gap: 1.7rem;
+    margin-top: 50px;
+}
+
+.imagenes-nine{
+    display: flex;
+    flex-direction: column;
+    gap: 1.7rem; 
+}
+
+.img-nine-two{
+    width: 40rem;
+    height: 29rem;
+    border-radius: 15px;
+}
+
+.img-nine{
+    width: 19.8rem;
+    border-radius: 15px;
 }
