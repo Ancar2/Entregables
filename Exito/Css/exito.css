@@ -415,7 +415,7 @@ input::placeholder{
 }
 
 
-/* -------segunda fila de imagenes --------------------------*/
+/* -------promociones --------------------------*/
 
 .contenedor-promo{
     display: flex;
@@ -503,14 +503,15 @@ input::placeholder{
     margin-top: 39px;
 }
 
-/* -------Cuarta fila de imagenes --------------------------*/
+/* -------imagen que cambia --------------------------*/
 
 .imagenes-cambia{ 
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 32px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .img-cambia{
@@ -544,16 +545,17 @@ input::placeholder{
     margin-top: 0px;
     width: 66.3%;
     letter-spacing: 1px;
-    border: 1px solid red; 
+    margin-bottom: 0px;
 }
 
-/* -------iquinta fila de imagenes--------------------------*/
+/* -------imagenes con grande izquierda--------------------------*/
 
 .imagenes-left{
     display: flex;
     justify-content: center;
     gap: 1.7rem;
     margin-top: 34px;
+    margin-bottom: 33px;
 }
 
 .img-left-one{
@@ -566,7 +568,7 @@ input::placeholder{
     border-radius: 15px;
 }
 
-/* -------sexta fila de imagenes--------------------------*/
+/* -------imagenes con grande derecha--------------------------*/
 
 .imagenes-right{
     display: flex;
@@ -586,7 +588,7 @@ input::placeholder{
 }
 
 
-/* -------octava fila de imagenes--------------------------*/
+/* -------imagenes largas--------------------------*/
 
 .img-center{
     width: 85rem;
@@ -617,4 +619,132 @@ input::placeholder{
 .img-nine{
     width: 19.8rem;
     border-radius: 15px;
+}
+
+/* -------tarjetas con imagen--------------------------*/
+
+.container-tarjetasmove{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tarjetasmove-img{
+    display: flex;
+    width: 70%;
+    margin-left: 60px;
+    position: relative;
+}
+
+.container-carruselt{
+    width: 65%;
+    overflow: hidden;
+    padding-left: 30px;
+    
+}
+
+.carrusel-tarjetas{
+    display: flex;
+    width: 300rem;
+    gap: 60px;
+    animation: mover3 0s infinite;
+}
+
+@keyframes mover3 {
+  14%   { transform: translateX(0%); }
+  15%   { transform: translateX(-5%); }
+  29%   { transform: translateX(-5%); }
+  30%   { transform: translateX(-10%); }
+  44%   { transform: translateX(-10%); }
+  45%   { transform: translateX(-14%); }
+  59%   { transform: translateX(-14%); }
+  60%   { transform: translateX(-19%); }
+  74%   { transform: translateX(-19%); }
+  75%   { transform: translateX(-23%); }
+  89%   { transform: translateX(-23%); }
+  90%   { transform: translateX(-27%); }
+  99%   { transform: translateX(-28%); }
+}
+
+.tarjeta-c{
+    width: 10.3rem;
+    font-family: 'poppins',helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.tarjeta-c img{
+    width: 100%;
+}
+
+.tarjeta-c a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.tdescripcion{
+    margin: 1px;
+}
+
+.parentesis{
+    color: gray;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.precio{
+    -webkit-text-stroke-width: 0.28px;
+    margin-bottom: 2.5rem;
+}
+
+.por{
+    font-size: 11px;
+}
+
+strong{
+     -webkit-text-stroke-width: 0.1px;
+}
+
+.tarjeta-c button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    height: 2.6rem;
+    font-family: 'poppins',helvetica, sans-serif;
+    -webkit-text-stroke-width: 0.7px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    background: #F78524;
+    cursor: pointer;
+}
+
+.tarjetasmove-img a{
+    width: 40%;
+}
+
+.imagen-decontainer{
+    margin: 18px;
+    width: 85%;
+}
+
+.fa-circle-chevron-left{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: -0.5rem;
+    color: #e9e3e3;
+    background: radial-gradient(black, white,transparent);
+}
+
+.fa-circle-chevron-right{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 9rem;
+    margin-left: 53.5rem;
+    color: #e9e3e3;
+    background: radial-gradient(black, white,transparent);
 }
