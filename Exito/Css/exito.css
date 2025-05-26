@@ -532,13 +532,13 @@ input::placeholder{
 
 /* -------blackdays --------------------------*/
 
-.black{
+.titulos{
     display: flex;
     justify-content: center;
     width: 100%;
 }
 
-.blackdays{
+.titulo{
     font-family: 'poppins',helvetica, sans-serif; 
     font-size: 1.25rem;
     -webkit-text-stroke-width: 1px;
@@ -550,7 +550,7 @@ input::placeholder{
 
 /* -------imagenes con grande izquierda--------------------------*/
 
-.imagenes-left{
+.imagenes-left, .imagenes-par{
     display: flex;
     justify-content: center;
     gap: 1.7rem;
@@ -570,7 +570,7 @@ input::placeholder{
 
 /* -------imagenes con grande derecha--------------------------*/
 
-.imagenes-right{
+.imagenes-right, .imagenes-cuatro{
     display: flex;
     justify-content: center;
     gap: 1.7rem;
@@ -593,6 +593,7 @@ input::placeholder{
 .img-center{
     width: 85rem;
     border-radius: 15px;
+    margin-bottom: 18px;
 }
 
 /* -------novena fila de imagenes--------------------------*/
@@ -647,7 +648,7 @@ input::placeholder{
     display: flex;
     width: 300rem;
     gap: 60px;
-    animation: mover3 0s infinite;
+    animation: mover3 10s infinite;
 }
 
 @keyframes mover3 {
@@ -673,8 +674,61 @@ input::placeholder{
     font-weight: bold;
 }
 
-.tarjeta-c img{
+.principal-hov{
+    position: relative;
     width: 100%;
+}
+
+.hov-1, .hov-2, .hov-3, .hov-4, .hov-5, .hov-6, .hov-7, .hov-8, .hov-9, .hov-10 {
+    position: absolute;
+    left: 1px;
+    width: 170px;
+    opacity: 0;
+}
+
+.hov-1:hover, .hov-2:hover, .hov-3:hover, .hov-4:hover, .hov-5:hover, .hov-6:hover, .hov-7:hover, .hov-8:hover, .hov-9:hover, .hov-10:hover{
+    opacity: 1;
+}
+
+.hov-1{
+     margin-left: 1.8;
+
+}
+
+.hov-2{
+    margin-left: 14rem;
+}
+
+.hov-3{
+    margin-left: 28rem;
+}
+
+.hov-4{
+    margin-left: 42rem;
+}
+
+.hov-5{
+    margin-left: 56rem;
+}
+
+.hov-6{
+    margin-left: 70rem;
+}
+
+.hov-7{
+    margin-left: 84rem;
+}
+
+.hov-8{
+    margin-left: 98rem;
+}
+
+.hov-9{
+    margin-left: 112rem;
+}
+
+.hov-10{
+    margin-left: 126rem;
 }
 
 .tarjeta-c a{
@@ -691,6 +745,7 @@ input::placeholder{
     font-size: 12px;
     margin-top: 0px;
     padding-top: 0px;
+    margin-bottom: 7px;
 }
 
 .precio{
@@ -700,6 +755,7 @@ input::placeholder{
 
 .por{
     font-size: 11px;
+    margin-bottom: 0px;
 }
 
 strong{
@@ -718,8 +774,13 @@ strong{
     border-radius: 10px;
     color: white;
     border: none;
+    margin-top: 5px;
     background: #F78524;
     cursor: pointer;
+}
+
+.tarjeta-c button:hover{
+    background-color: #E2681D;
 }
 
 .tarjetasmove-img a{
@@ -747,4 +808,241 @@ strong{
     margin-left: 53.5rem;
     color: #e9e3e3;
     background: radial-gradient(black, white,transparent);
+}
+
+/* -------Consolas--------------------------*/
+
+.consolas, .celulares, .tablets, .aspiradoras{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.container-consolas{
+    display: flex;
+    justify-content: start;
+    width: 64%;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.carrusel-consolas{
+    display: flex;
+    width: 300rem;
+    gap: 70px;
+    animation: mover4 10s infinite;
+}
+
+.tarjeta-con{
+    width: 13rem;
+    font-family: 'poppins',helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.tarjeta-con a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.principal-hov-con{
+    position: relative;
+    width: 80%;
+    margin-left: 1.5rem;
+    opacity: 1;
+}
+
+.con-1, .con-2, .con-3, .con-4, .con-5, .con-6, .con-7, .con-8, .con-9, .con-10 {
+    position: absolute;
+    left: 1px;
+    width: 165.9px;
+    opacity: 0;
+}
+
+.con-1:hover, .con-2:hover, .con-3:hover, .con-4:hover, .con-5:hover, .con-6:hover, .con-7:hover, .con-8:hover, .con-9:hover, .con-10:hover{
+    opacity: 1;
+}
+
+.con-1{
+     margin-left: 1.3rem;
+}
+
+.con-2{
+    margin-left: 18.3rem;
+}
+
+.con-3{
+    margin-left: 35rem;
+}
+
+.con-4{
+    margin-left: 53rem;
+}
+
+.con-5{
+    margin-left: 70rem;
+}
+
+.con-6{
+    margin-left: 88rem;
+}
+
+.con-7{
+    margin-left: 105rem;
+}
+
+.con-8{
+    margin-left: 122rem;
+}
+
+.con-9{
+    margin-left: 140rem;
+}
+
+.con-10{
+    margin-left: 157rem;
+}
+
+
+
+.precio-antes{
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    margin: 0px;
+    height: 20px;
+}
+
+.icono-alert{
+    width: 12px;
+    margin-left: 4px;
+}
+
+.precio-consola{
+    margin-top: 5px;
+    margin-bottom: 5rem;
+}
+
+.porcentaje-descuento{
+    background: black;
+    color: white;
+    padding: 2px 5px;
+    font-size: 14px;
+}
+
+.precio-tachado{
+    color: gray;
+    margin-left: 20px;
+    text-decoration: line-through;
+    letter-spacing: 1px;
+}
+
+.precio-tach{
+    color: gray;
+    
+    text-decoration: line-through;
+    letter-spacing: 1px;
+}
+
+.tarjeta-con button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+    width: 100%;
+    height: 2.6rem;
+    font-family: 'poppins',helvetica, sans-serif;
+    -webkit-text-stroke-width: 0.7px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    background: #F78524;
+    cursor: pointer;
+}
+
+.tarjeta-con button:hover{
+    background-color: #E2681D ;
+}
+
+
+.ver-mas{
+    color: black;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.naranja-credit{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.precio-credit{
+    font-size: 19px;
+    color: #F78524;
+    -webkit-text-stroke-width: 0.3px;
+    letter-spacing: 1.5px;
+    margin: 5px 0 0 0;
+}
+
+.imagen-credit{
+    width: 30px;
+    height: 30px;
+    
+}
+
+.precio-otros{
+    margin-top: 0px;
+    margin-bottom: 3.2rem;
+}
+
+@keyframes mover4 {
+  14%   { transform: translateX(0%); }
+  15%   { transform: translateX(-10%); }
+  29%   { transform: translateX(-10%); }
+  30%   { transform: translateX(-20%); }
+  44%   { transform: translateX(-20%); }
+  45%   { transform: translateX(-31%); }
+  59%   { transform: translateX(-31%); }
+  60%   { transform: translateX(-41%); }
+  74%   { transform: translateX(-41%); }
+  75%   { transform: translateX(-51%); }
+  89%   { transform: translateX(-51%); }
+ 
+}
+
+.fa-circle-right{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: 81rem;
+    color: #e9e3e3;
+    background: radial-gradient(black, white,transparent);
+}
+
+.fa-circle-left{
+    font-size: 40px;
+    position: absolute;
+    margin-top: 13rem;
+    margin-left: -0.5rem;
+    color: #e9e3e3;
+    background: radial-gradient(black, white,transparent);
+}
+
+.carrusel-apiradora{
+    display: flex;
+    width: 300rem;
+    gap: 70px;
+    animation: mover4 10000s infinite;      
+    /* //corregir// */
+}
+
+.carrusel-coches{
+    display: flex;
+    width: 300rem;
+    gap: 60px;
+    animation: mover3 10000s infinite;
 }
