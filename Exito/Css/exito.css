@@ -530,7 +530,7 @@ input::placeholder{
    opacity: 1;
 }
 
-/* -------blackdays --------------------------*/
+/* -------TITULOS --------------------------*/
 
 .titulos{
     display: flex;
@@ -542,7 +542,7 @@ input::placeholder{
     font-family: 'poppins',helvetica, sans-serif; 
     font-size: 1.25rem;
     -webkit-text-stroke-width: 1px;
-    margin-top: 0px;
+    margin-top: 30px;
     width: 66.3%;
     letter-spacing: 1px;
     margin-bottom: 0px;
@@ -1037,7 +1037,6 @@ strong{
     width: 300rem;
     gap: 70px;
     animation: mover4 10000s infinite;      
-    /* //corregir// */
 }
 
 .carrusel-coches{
@@ -1045,4 +1044,233 @@ strong{
     width: 300rem;
     gap: 60px;
     animation: mover3 10000s infinite;
+}
+
+/* -----------------------------------categorias------------------------------ */
+
+.categorias{
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 2rem;
+}
+
+.container-categoria{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    width: 10rem;
+    height: 13rem;
+}
+
+.imagen-categoria{
+    width: 9rem;
+}
+
+.palabra-categoria{
+    padding-left: 35px;
+    font-family: 'poppins',helvetica, sans-serif;
+}
+
+
+.container-categoria:hover .imagen-categoria{
+    zoom: 110%;
+}
+
+.container-categoria:hover .palabra-categoria{
+    zoom: 110%;
+    -webkit-text-stroke-width: 0.7px;
+}
+/* -----------------------------------FOOTER------------------------------ */
+/* -----------------------------------banner negro------------------------------ */
+.banner-negro{
+    display: flex;
+    justify-content: center;
+    background: #231F20;
+    gap: 1.8%;
+    margin-top: 2rem;
+}
+
+.container-letranegro{
+    display: flex;
+    justify-content: start;
+    margin: 1%;
+    flex-wrap: wrap;
+    gap: 8px;
+   
+}
+
+.icono-black{
+    width: 30px;
+}
+
+.letrade-black{
+    font-family: 'poppins',helvetica, sans-serif;
+    color: white; 
+    font-size: 87%;
+    -webkit-text-stroke-width: 0.8px;
+}
+
+/* -----------------------------------info ------------------------------ */
+.info{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    gap: 7%;
+}
+
+.product-info{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-top: 0px;
+}
+
+
+.qr{
+    width: 4rem;
+    padding-right: 2rem;
+    margin-right: 2rem;
+    border-right: 1px solid gray;
+}
+
+.infoqr{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.product-info img{
+    margin: 3px;
+}
+
+.icons{
+    margin-top: 15px;
+}
+
+.info-3{
+    margin:20px;
+}
+
+.info-2{
+    margin-top:0px;
+    color: gray;
+}
+
+.info-1{
+    margin-top:20px;
+    margin-bottom: 0px;
+}
+
+.btn-actualizar{
+    background: black;
+    color: white;
+    width: 40%;
+    height: 50px;
+    font-size: 14px;
+    font-family: 'poppins',helvetica, sans-serif;
+    border-radius: 10px;
+}
+
+.letra-app{
+    font-size: 19px;
+    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 8px;
+}
+
+.logos{
+    margin-top: 35px;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    align-items: center;
+    gap: 8px;
+    -webkit-text-stroke-width: 0.6px;
+    border-top: 1px solid #E3E3E3;
+    width: 20%;
+    padding: 0px 20px 0px 20px;
+    margin-top: 30px;
+    background: #F4F4F4;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.more img{
+    width: 8%;
+    height: 30%;
+}
+
+.more-info{
+    display:flex;
+    justify-content:center;
+}
+
+.space-1{
+    border-right: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.space-2{
+    border-left: 1px solid #E3E3E3;
+    border-bottom: 1px solid #E3E3E3;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.foot-nav-1{
+    background:  #F4F4F4;
+    display: flex;
+    justify-content: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    gap: 4%;
+    -webkit-text-stroke-width: 0.4px;
+    border-bottom: 1px solid #E3E3E3;
+}
+
+.foot-nav-1 p{
+    font-size: 13px;
+}
+
+.foot-nav-2{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'poppins',helvetica, sans-serif;
+    font-size: 12px;
+    height: 5rem;
+    background:  #F4F4F4;
+}
+
+.marcas{
+    display: flex;
+    justify-content:space-around;
+    gap: 70px;
+}
+
+.l-img-marcas{
+    display: flex;
+    gap:70px;
+    font-size: 15px;
+}
+
+.derechos{
+    color: #070707;
+}
+
+.visit{
+    color: #676767;
 }

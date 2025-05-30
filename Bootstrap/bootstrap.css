@@ -1,0 +1,363 @@
+
+.navbar{
+    background: rgb(31, 31, 64);
+}
+
+.milogo{
+    width: 50px;
+    filter: invert(100%);
+}
+
+.micolorbut{
+    background: rgb(56, 71, 124);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.inpt::placeholder{
+    color: rgba(128, 128, 128, 0.533);
+}
+
+/* Boton adoptar--------------------------------------------- */ 
+.adopt {
+ --glow-color: rgb(243, 237, 237);
+ --glow-spread-color: rgba(239, 238, 245, 0.781);
+ --enhanced-glow-color: rgb(255, 206, 206);
+ --btn-color: rgb(56, 71, 124);
+ border: .25em solid var(--glow-color);
+ padding: 1em 3em;
+ color: var(--glow-color);
+ font-size: 15px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+}
+
+.adopt::after {
+ pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.adopt:hover {
+ color: var(--btn-color);
+ background-color: var(--glow-color);
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+}
+
+.adopt:active {
+ box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+/* navegacion------------------------------------ */
+.mioutline {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  
+}
+
+.mirect {
+  stroke-dashoffset: 10;
+  stroke-dasharray: 5 90  ;
+  transition: 0.5s;
+  stroke: #edece7;
+}
+
+.minav {
+  position: relative;
+  width: 400px;
+  height: 60px;
+  border-radius: 40px;
+}
+
+.micontainer:hover .mioutline .mirect {
+  transition: 999999s;
+  stroke-dashoffset: 1;
+  stroke-dasharray: 0;
+}
+
+.micontainer {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 16, 16, 0.402);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5em;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.mibtn {
+  padding: 0.5em 1.5em;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.mibtn:hover {
+  background: #3c3a6e;
+  border-radius: 10px;
+}
+
+.mibtn:nth-child(1):hover ~ svg .mirect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 2 8 73.3 8 10.7;
+}
+
+.mibtn:nth-child(2):hover ~ svg .mirect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 12.6 9.5 49.3 9.5 31.6;
+}
+
+.mibtn:nth-child(3):hover ~ svg .mirect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 24.5 8.5 27.5 8.5 55.5;
+}
+
+.mibtn:nth-child(4):hover ~ svg .mirect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 34.7 6.9 10.2 6.9 76;
+}
+
+.mibtn:hover ~ .mioutline .mirect {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 0 0 10 40 10 40;
+  transition: 0.5s !important;
+}
+
+/* imagenes linea 1------------------------------------ */
+/* carrusel-------- */
+.hidd{
+  overflow: hidden;
+  border: 6px solid #181530;
+  height: 45rem;
+  box-shadow: 0px 0px 18px white;
+  padding: 0px;
+}
+
+/* imagen  1------------ */
+.tarjeta {
+  position: relative;
+  background: #181530;
+  width: 100%;
+  height: 55vh;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 120ms;
+  overflow: hidden;
+  box-shadow: 0px 1px 53px rgba(229, 230, 232, 0.994);
+  border: 3px solid rgba(3, 73, 21, 0.743);
+}
+
+.tarjeta-2 {
+  background: #011e18;
+  height: 45vh;
+  border: 3px solid #181530;
+}
+
+.tarjeta-3 {
+  background: #011e18;
+  height: 25vh;
+  border: 3px solid #181530;
+}
+
+.tarjeta-4 {
+  background: #181530;
+  height: 25vh;
+  border: 3px solid #181530;
+}
+
+.tarjeta:active {
+  transform: scale(.95);
+}
+
+.tarjeta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: inset 0px 0px 25px 5px rgba(255, 255, 255, .5);
+  z-index: 1;
+}
+
+.tarjeta::after {
+  content: "Reservar";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  padding-left: 15px;
+  background: #181818;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  line-height: 40px;
+  text-transform: uppercase;
+  z-index: 2;
+  transition: all .2s ease-in;
+}
+
+.tarjeta:hover::after {
+  bottom: 0;
+}
+
+.tarjeta:active::after {
+  content: "Adding !";
+  height: 65px;
+}
+
+.imgn-product {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(3px 3px 5px #18181815);
+  transform: translate(-50%, -50%);
+  animation: shoes 1s ease infinite alternate;
+  transition: all .5s ease-in;
+}
+
+@keyframes shoes {
+  from {
+    top: 48%;
+  }
+
+  to {
+    top: 52%;
+  }
+}
+
+.tarjeta:hover img {
+  /* top: 20%;
+  left: 30%; */
+  width: 220px;
+  height: auto;
+  animation: none;
+  transform: rotate(15deg) translate(-35%, -25%);
+}
+
+.text-detras {
+  position: absolute;
+  top: 15%;
+  left: -80%;
+  color: #f4f0f0;
+  transition: all .3s ease-in;
+}
+
+.text-detras span {
+  font-size: 25px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.text-detras p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tarjeta:hover .text-detras {
+  top: 15%;
+  left: 5%;
+}
+
+.fil-shoes2 {
+  fill: #a59573
+}
+
+/* From Uiverse.io by janisar-hyder bulldog acordeon */ 
+.imagenbull {
+  display: block;
+  max-width: 100%;
+}
+
+.stack {
+  width: 55%;
+  max-width: 400px;
+  transition: 0.25s ease;
+  &:hover {
+    transform: rotate(5deg);
+    .card:before {
+      transform: translatey(-2%) rotate(-4deg);
+    }
+    .acard:after {
+      transform: translatey(2%) rotate(4deg);
+    }
+  }
+}
+
+.acard {
+  aspect-ratio: 3 / 2;
+  border: 4px solid;
+  background-color: #241f47;
+  position: relative;
+  transition: 0.15s ease;
+  cursor: pointer;
+  padding: 5% 5% 15% 5%;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 4px solid;
+    background-color: #0af1c7;
+    transform-origin: center center;
+    z-index: -1;
+    transition: 0.15s ease;
+    top: 0;
+    left: 0;
+  }
+
+  &:before {
+    transform: translatey(-2%) rotate(-6deg);
+  }
+
+  &:after {
+    transform: translatey(2%) rotate(6deg);
+  }
+}
+.aimage {
+  width: 100%;
+  border: 4px solid;
+  background-color: #eee;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@supports (aspect-ratio: 1 / 1) {
+  .browser-warning {
+    display: none;
+  }
+}
+
+.que{
+  border: 2px solid red;
+}
