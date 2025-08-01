@@ -251,3 +251,4 @@ if (promedio >= 0 && promedio <= 5) {
     console.log(`ingresa un promedio valido`);
     
 }
+
